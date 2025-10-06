@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Customizing Tailwind with a luxe color palette and font pairing */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .luxury-heading {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-luxury-dark {
+            background-color: #1a1a2e; /* Deep Charcoal/Navy */
+        }
+        .text-accent-gold {
+            color: #daa520; /* Gold/Metallic Accent */
+        }
+        .bg-button-primary {
+            background-color: #4a4e69; /* Muted Blue-Gray */
+        }
+        .hover\:bg-button-primary-hover:hover {
+            background-color: #6d708f;
+        }
+        .bg-button-secondary {
+            background-color: #a77a4e; /* Copper/Bronze */
+        }
+        .hover\:bg-button-secondary-hover:hover {
+            background-color: #c99c6b;
+        }
+    </style>
+</head>
+<body class="bg-luxury-dark text-gray-100 font-sans leading-normal tracking-normal">
+    <div class="container mx-auto p-4 md:p-8 flex items-center justify-center min-h-screen">
+        <div class="bg-white/5 backdrop-blur-sm border border-gray-700 p-8 rounded-xl shadow-2xl max-w-sm w-full text-center transform transition duration-500 hover:shadow-3xl hover:border-accent-gold">
+            <h1 class="luxury-heading text-4xl font-bold mb-8 text-accent-gold tracking-wider">Expense Tracker</h1>
+            <ul class="space-y-6">
+                <li>
+                    <a href="/add" class="block w-full bg-button-primary hover:bg-button-primary-hover text-white luxury-heading font-bold py-4 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-lg">
+                        Add Expense ➕
+                    </a>
+                </li>
+                <li>
+                    <a href="/view" class="block w-full bg-button-secondary hover:bg-button-secondary-hover text-white luxury-heading font-bold py-4 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-lg">
+                        View Expenses 📊
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
